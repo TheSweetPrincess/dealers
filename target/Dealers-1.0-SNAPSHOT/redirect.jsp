@@ -11,4 +11,5 @@ servlet but should be the only JSP outside of WEB-INF.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<% response.sendRedirect("admin/dealers"); %>
+ <h1>Hello World!</h1>
+<% //response.sendRedirect("angular"); %>

@@ -86,6 +86,17 @@ public class DealerController {
         mv.addObject("error", error);
         mv.addObject("listDealers", this.dealerService.listDealers());
         logger.info(new Date() + " returning ModelAndView with details" + mv.toString());
+        logger.info("new code");
+        return mv;
+    }
+        @RequestMapping(value = {"/test"}, method = {RequestMethod.GET})
+    public ModelAndView test() {
+        logger.info(new Date() + " called controller function Requesting admin dealers view");
+        List<Country> countryList = countryService.listCountries();
+        ModelAndView mv = new ModelAndView("angular");
+        mv.addObject("error", "testing");
+
+        logger.info(new Date() + " returning ModelAndView with details" + mv.toString());
         return mv;
     }
 

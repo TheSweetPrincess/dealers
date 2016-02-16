@@ -19,9 +19,9 @@
     </listener>
       
     <!-- Configure Session -->
-    <listener>
+<!--    <listener>
         <listener-class>org.springframework.security.web.session.HttpSessionEventPublisher</listener-class>
-    </listener>          
+    </listener>          -->
       
     <!-- Configure Dispatcher Servlet -->  
     <servlet>
